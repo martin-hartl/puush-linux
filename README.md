@@ -2,7 +2,7 @@ Puush in Linux
 =====================
 
 Takes screenshots and uploads them to puush using the puush API and copies the link to clipboard. Recommended for set up with keyboard shortcuts
-<br>Utilises __gnome-screenshot__ for taking screenshots, __zenity__ for file uploads (both included in Ubuntu).
+<br>Utilises __shutter__ (https://apps.ubuntu.com/cat/applications/shutter) for taking screenshots, __zenity__ (included in Ubuntu) for file uploads.
 
 ## Instructions
 - Clone or download the repo
@@ -26,7 +26,7 @@ puush -h  	  # help
 ```
 
 ## Dependencies
-- gnome-screenshot
+- shutter
 - zenity
 - curl
 - xclip
@@ -34,5 +34,6 @@ puush -h  	  # help
 
 
 ### Alternatives
+- puush using gnome-screenshot https://github.com/sunmockyang/puush-linux
 - puush in command line https://github.com/blha303/puush-linux
 - puush using keyboard https://github.com/sgoo/puush-linux

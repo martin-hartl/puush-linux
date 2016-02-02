@@ -96,21 +96,21 @@ case "$1" in
 	-a)
 		echo "Whole Desktop"
 			fileName=$(generateFileName)
-			gnome-screenshot -f "$fileName"
+			shutter -f -e --output="$fileName"
 			puushFile "$fileName"
 		;;
 
 	-b)
 		echo "Area"
 			fileName=$(generateFileName)
-			gnome-screenshot -a -f "$fileName"
+			shutter -s -e --output="$fileName"
 			puushFile "$fileName"
 		;;
 
 	-c)
 		echo "Window"
 			fileName=$(generateFileName)
-			gnome-screenshot -w -f "$fileName"
+			shutter -a -e --output="$fileName"
 			puushFile "$fileName"
 		;;
 
@@ -124,10 +124,10 @@ case "$1" in
 		helpText
 		exit 0
 		;;
-		
+
 	*)
 		echo "Upload $1"
 			puushFile "$1"
 		;;
-		
+
 esac
